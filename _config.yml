@@ -1,8 +1,8 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: My sample book
-author: The Jupyter Book Community
+title: The Juypter book - Dokumentation von Tim Kossmann und Laura Heß
+author: Tim Kossmann (38099) & Laura Heß (38603) 
 logo: logo.png
 
 # Force re-execution of notebooks on each build.
