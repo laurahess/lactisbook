@@ -3,7 +3,7 @@
 
 title: The Juypter book - Dokumentation von Tim Kossmann und Laura Heß
 author: Tim Kossmann (38099) & Laura Heß (38603) 
-logo: logo.png
+logo: LaCTiS_Logo.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
