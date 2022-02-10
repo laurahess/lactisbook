@@ -3,16 +3,16 @@
 :::{note}
 Hier wird erläutert, wie das Dashboard aufgebaut ist, welche Technologien wir verwendet haben und wie wir das Ganze technisch umgesetzt haben. 
 
-Die Codebeispiele können dabei leicht abweichen um es für den Leser besser verständlich zu machen.
+Die Codebeispiele können dabei leicht abweichen, um es für den Leser besser verständlich zu machen.
 :::
 
 ## Genereller Aufbau
 
-Das Dashboard besteht aus mehreren Tabs, die unterschiedliche Themen behandeln. Dabei gehen wir Thematisch vor. Zunächst kann man sich im Tab "Schaden durch Hacks" einen ersten Überblick verschaffen, was für Schäden Cyber Attacken im Allgemeinen nach sich ziehen. Um sich weiter zu informieren wird im Tab "Hackermethoden" genauer darauf eingegangen, wie Hacks durchgeführt werden und welche Arten am meisten verbreitet sind. Die zweit häufigsten Angriffe, mit der Schwachstelle Mensch sind Phishing Attacken. Deswegen kann sich der Nutzer im Tab "Phishing" über mögliche Absichten von solchen Mails informieren und auch schauen, welche Branchen und Abteilungen häufig betroffen sind. Im letzten Tab "Passwortsicherheit" wird, wie der Name schon sagt, dann noch auf die Passwortsicherheit ein. Hier kann der Nutzer Passörter testen und schauen, ob sich vielleicht eins seiner verwendeten Passwörter in der Wordcloud der meist verwendeten Passwörter wiederfindet.
+Das Dashboard besteht aus mehreren Tabs, die unterschiedliche Themen behandeln. Dabei gehen wir Thematisch vor. Zunächst kann man sich im Tab "Schaden durch Hacks" einen ersten Überblick verschaffen, was für Schäden Cyber Attacken im Allgemeinen nach sich ziehen. Um sich weiter zu informieren, wird im Tab "Hackermethoden" genauer darauf eingegangen, wie Hacks durchgeführt werden und welche Arten am meisten verbreitet sind. Die zweit häufigsten Angriffe, mit der Schwachstelle Mensch sind Phishing Attacken. Deswegen kann sich der Nutzer im Tab "Phishing" über mögliche Absichten von solchen Mails informieren und auch schauen, welche Branchen und Abteilungen häufig betroffen sind. Im letzten Tab "Passwortsicherheit" wird, wie der Name schon sagt, gehen wir noch auf die Passwortsicherheit ein. Hier kann der Nutzer Passwörter testen und schauen, ob sich vielleicht eins der eigen verwendeten Passwörter in der Wordcloud der meist verwendeten Passwörter wiederfindet.
 
 ## Farbauswahl
 
-Wir haben uns für ein dunklen Hintergrund entschieden da dies oft angenehmer für den Nutzer ist. Die Daten haben wir in einem hellblauton dargestellt. Aktzente haben wir mit einem dunklen Lila gesetzt. Dadurch wollen wir die Aufmerksamkeit des Nutzers lenken. Es ist auffallend genug aber nicht so aggressiv wie ein rot. 
+Wir haben uns für ein dunklen Hintergrund entschieden, da dies oft angenehmer für das menschliche Auge der Nutzer ist. Die Daten haben wir in einem hellen Blauton dargestellt. Akzente haben wir mit einem dunklen Lila gesetzt. Dadurch wollen wir die Aufmerksamkeit des Nutzers lenken. Es ist auffallend genug, aber nicht so aggressiv wie ein rot. 
 
 ## Verwendete Technologien
 
@@ -30,7 +30,7 @@ if __name__ == '__main__':
 
 ```
 
-Für die Gestaltung des Dashboard haben wir eine app.css Datei erstellt, die wir im Ordner assets hinterlegt haben. Hier wurden Sachen definiert wie beispielsweise die Hintergrundfarbe sowie das Aussehen der Überschriften:
+Für die Gestaltung des Dashboards haben wir eine app.css Datei erstellt, die wir im Ordner assets hinterlegt haben. Hier wurden Sachen definiert wie beispielsweise die Hintergrundfarbe sowie das Aussehen der Überschriften:
 
 ```
 body {
@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 
 ### Datenhandling
 
-Die Daten haben, die wir verwenden, liegen uns zu Beginn in Excel vor. Mit dem Framework Pandas lesen wir diese Daten ein und bearbeiten sie. Pandas verwenden wir als zentrales Tool um Daten zu manipulieren und auch um Daten am Ende für den Export bereit zu stellen. 
+Die Daten haben, die wir verwenden, liegen uns zu Beginn in Excel vor. Mit dem Framework Pandas lesen wir diese Daten ein und bearbeiten sie. Pandas verwenden wir als zentrales Tool, um Daten zu manipulieren und auch um Daten am Ende für den Export bereitzustellen. 
 
 ```
 self.df = pd.read_excel("./datasets/DataBreaches.xlsx")
@@ -59,9 +59,9 @@ self.df["organisation"] = self.df["organisation"].astype("string") # Umwandlung 
 self.df['organisation_name'] = ''
 ```
 
-Das Dataframe kann dann in der ganzen Klasse verwendet werden um Diagramme zu erstellen oder zum Download bereit gestellt werden.
+Das Dataframe kann dann in der ganzen Klasse verwendet werden, um Diagramme zu erstellen oder zum Download bereitgestellt werden.
 
-Das Framework ist dabei sehr tiefgehend und bietet viele Funktionen, die wir leider nicht alle verstehen oder noch nicht richtig anwenden können. Deswegen mussten wir auch häufig Workarounds für bestimmte Probleme finden. Zum Beispiel wollten wir einmal die Zeitpunkt von Databreaches gleichmäßig im Monat verteilen, sodass im Scatter-Plot-Diagramm die Daten nicht übereinander liegen sondern sich gelichmäßig verteilen:
+Das Framework ist dabei sehr tiefgehend und bietet viele Funktionen, die wir leider nicht alle verstehen oder noch nicht richtig anwenden können. Deswegen mussten wir auch häufig Workarounds für bestimmte Probleme finden. Zum Beispiel wollten wir einmal die Zeitpunkte von Databreaches gleichmäßig im Monat verteilen, sodass im Scatter-Plot-Diagramm die Daten nicht übereinander liegen:
 
 ```
 for year in range( 2004, 2022):
@@ -166,11 +166,11 @@ fig.update_xaxes(showgrid=False, title_font_family="Arial", title_font_color=col
 
 ## Ordnerstruktur und Technischer Aufbau
 
-Die Struktur haben wir so aufgebaut, dass wir für jeden Tab eine eigene Klasse erstellt haben. Jede Klasse bietet dabei eine get_layout() Funktion, die das Dash Layout zurückgibt. Durch das aufteilen konnte sowohl Hauptdatei deutlich übersichtlicher gestaltet werden und man wusste direkt, wo man suchen sollte, wenn ein Fehler auftritt. Wir haben uns auch dafür entschieden die einzelnen Diagramme für die Seiten ebenfalls in eigenen Klassen zu verwalten. Dadurch wurde die Logik von Diagramm erstellen und Dashboard sauber voneinander getrennt.
+Die Struktur haben wir so aufgebaut, dass wir für jeden Tab eine eigene Klasse erstellt haben. Jede Klasse bietet dabei eine get_layout() Funktion, die das Dash Layout zurückgibt. Durch das aufteilen konnte sowohl Hauptdatei deutlich übersichtlicher gestaltet werden und man wusste direkt, wo man suchen sollte, wenn ein Fehler auftritt. Wir haben uns auch dafür entschieden, die einzelnen Diagramme für die Seiten ebenfalls in eigenen Klassen zu verwalten. Dadurch wurde die Logik von Diagramm erstellen und Dashboard sauber voneinander getrennt.
 
 **Problem**
 
-Eigentlich wollten wir auch die Funktionen für die einzelnen Tabs in den Klassen definieren, wo wir auch das Layout festgelegt haben. Allerdings können Funktionen dort nicht an die Dashboard-App eingefügt werden. Deswegen mussten wir alle Funktionen in der Dashboard Datei erstellen.
+Eigentlich wollten wir auch die Funktionen für die einzelnen Tabs in den Klassen definieren, wo wir auch das Layout festgelegt haben. Allerdings können Funktionen dort nicht an die Dashboard-App eingefügt werden. Deswegen mussten wir alle Funktionen in der Dashboard-Datei erstellen.
 
 ### Beispiel für das Umsetzen eines Diagramms
 
@@ -234,7 +234,7 @@ def get_layout(self):
     )
 ```
 
-Im Bereich **left-side** wird der Platzhalter eingefügt in dem später das Diagramm angezeigt werden soll. Das Diagramm wird durch die Funktion in der dashboard.py Datei erzeugt.
+Im Bereich **left-side** wird der Platzhalter eingefügt, in dem später das Diagramm angezeigt werden soll. Das Diagramm wird durch die Funktion in der dashboard.py Datei erzeugt.
 
 ```
 atp = Chart_AttackVectors
@@ -247,7 +247,7 @@ def display_click_data(clickData):
     return atp.create_treemap()
 ```
 
-Im Bereich **right-side** wird dann der Text für die jeweils angeklickte Hackermethode angezeigt.
+Im Bereich **right-side** wird dann der Text, für die jeweils angeklickte Hackermethode angezeigt.
 
 ```
 dbav = AttackVectorsPage(app) 
@@ -262,7 +262,7 @@ def display_attackVectors(clickData):
 
 ### dashboard.py / Einstiegspunkt
 
-Der Einstiegspunkt der Appliktaion bietet die "dashboard.py" Datei. Hier wird die Dash-App erzeugt und mit dem grundlegendem Layout sowie allen Funktionen die im Dashboard gebraucht werden erzeugt. Im Layout legen wir zunächst nur das Aussehen des Headers fest.
+Der Einstiegspunkt der Applikation bietet die "dashboard.py" Datei. Hier wird die Dash-App erzeugt und mit dem grundlegendem Layout sowie allen Funktionen die im Dashboard gebraucht werden erzeugt. Im Layout legen wir zunächst nur das Aussehen des Headers fest.
 
 ```
 
@@ -349,11 +349,11 @@ Hier wollen wir dem Nutzer klar machen, was für Schaden Cyber Attacken anrichte
 
 **Was nicht ging**
 
-Eigentlich wollten wir den Titel der y-Achse linksbündig machen. Allerdings bietet plotly express keine Möglichkeit die Titel in ihrer Position anzupassen. Ein Versuch den wir unternommen haben, war eine Annotation einzufügen den wir als Titel verwenden können. Das Problem war, dass die Annotation nur im Prozentverhältnis vom gesamten Diagramm oder der Zeichenfläche dargestellt werden kann. Wenn das Diagramm nun in einem anderen Format benötigt wird, verschiebt es diese wieder und müsste eigentlich angepasst werden.
+Eigentlich wollten wir den Titel der y-Achse linksbündig machen. Allerdings bietet plotly express keine Möglichkeit, die Titel in ihrer Position anzupassen. Einer der Versuche, den wir unternommen haben, war eine Annotation einzufügen, den wir als Titel verwenden können. Das Problem war, dass die Annotation nur im Prozentverhältnis vom gesamten Diagramm oder der Zeichenfläche dargestellt werden kann. Wenn das Diagramm nun in einem anderen Format benötigt wird, verschiebt es diese wieder und müsste erneut angepasst werden.
 
 #### Summierte Schäden
 
-Es werden für die einzelnen Jahre die Schäden summiert und dargestellt. Um dem Nutzer ein Gefühl zu geben, ob es eher zunimmt oder abnimmt haben wir ebenfalls den Durchschnitt berechnet.
+Es werden für die einzelnen Jahre die Schäden summiert und dargestellt. Um dem Nutzer ein Gefühl zu geben, ob es eher zunimmt oder abnimmt, haben wir ebenfalls den Durchschnitt berechnet.
 Das Diagramm besteht dabei eigentlich aus vier Diagrammen: 
 
 - **Summe der Einzelnen Jahre**
@@ -458,7 +458,7 @@ avg_point = avg_year['avg'][avg_year["year"].index(year)]
 ```
 
 
-Am Ende werden hier noch die Annotations hinzugefügt um die Punkte zu betiteln:
+Am Ende werden hier noch die Annotations hinzugefügt, um die Punkte zu betiteln:
 
 ```
 fig.add_annotation(
@@ -502,12 +502,12 @@ Der genaue Code für die Diagrammerstellung wird nicht dargestellt, da das Prinz
 
 :::
 
-Um das Diagramm gut darstellen zu können war es notwendig das Dataframe erst einmal zu bearbeiten (siehe Datenhandling). Dadurch war es möglich die Kreise weiter voneinander zu trennen und nur die Namen der Firmen zu nennen, die die größten Schäden erlitten.
+Um das Diagramm gut darstellen zu können, war es notwendig, das Dataframe erst einmal zu bearbeiten (siehe Datenhandling). Dadurch war es möglich, die Kreise weiter voneinander zu trennen und nur die Namen der Firmen zu nennen, die die größten Schäden erlitten.
 
 
 ### data_breaches_attack_vectors.py / Hackermethoden
 
-Um die Hackermethoden gut darzustellen wollten wir die Daten als Treemap darstellen. Dabei stellt die größe der Felder dar, wie häufig das jeweilige Angriffsziel zu einem Datenleck führt. 
+Um die Hackermethoden gut darzustellen, wollten wir die Daten als Treemap darstellen. Dabei stellt die Größe der Felder dar, wie häufig das jeweilige Angriffsziel zu einem Datenleck führt. 
 
 ```
 self.fig = px.treemap(
@@ -531,17 +531,17 @@ self.fig.update_layout(
 self.fig.update_coloraxes(showscale=False)
 ```
 
-Das besondere hierbei ist das Anzeigen der Informationen über die verschiedenen Hackermethoden. Der Nutzer hat hier die Möglichkeit auf Felder zu klicken, über das eher nähere Informationen haben möchte. Im Dashboard werden diese Daten neben dem Diagramm angezeigt. 
+Das Besondere hierbei ist das Anzeigen der Informationen über die verschiedenen Hackermethoden. Der Nutzer hat hier die Möglichkeit, auf Felder zu klicken, über das eher nähere Informationen haben möchte. Im Dashboard werden diese Daten neben dem Diagramm angezeigt. 
 
 **Schwierigkeit**
 
-Eigentlich wollten wir die Informationen direkt im Diagramm anzeigen. Leider war das Problem, dass das Diagramm von plotly Express schon klickbar. Durch klicken wird eine kleine Animation ausgeführt, die in das Feld führt. Unsere Idee war die Information mittig im Diagramm anzuzeigen. Leider hätten wir dafür ein neues Diagramm erstellen müssen mit einer Annotation. Durch das ständige überschreiben der Treemap wurden zum einen die Animationen unterbrochen und wirkten dadurch komisch. Außerdem mussten wir das neue Diagramm so erstellen als hätte der Nutzer auf einen Wert geklickt. Das konnten wir zwar darstellen aber dann gab es keine Möglichkeit wieder zurück zu kommen.
+Eigentlich wollten wir die Informationen direkt im Diagramm anzeigen. Leider war das Problem, dass das Diagramm von plotly Express schon klickbar. Durch klicken wird eine kleine Animation ausgeführt, die in das Feld führt. Unsere Idee war, die Information mittig im Diagramm anzuzeigen. Leider hätten wir dafür ein neues Diagramm erstellen müssen mit einer Annotation. Durch das ständige Überschreiben der Treemap wurden zum einen die Animationen unterbrochen und wirkten dadurch komisch. Außerdem mussten wir das neue Diagramm so erstellen, als hätte der Nutzer auf einen Wert geklickt. Das konnten wir zwar darstellen, aber dann gab es keine Möglichkeit wieder zurück zu kommen.
 
 ### phishing.py / Phishing
 
 
 #### Phishing Arten
-Durch die Seite Phishing wollten wir die Nutzer vor allem nochmal sensibilisieren auf die Arten zu achten. Hierfür haben wir drei Donut-Diagramme erstellt, die die Häufigkeit der verschiedenen Phishingarten darstellt. Um auf den ersten Blick erkennen zu lassen, um welche Art es sich Handelt haben wir neben Text auch Bilder verwendet.
+Durch die Seite Phishing wollten wir die Nutzer vor allem noch mal sensibilisieren, auf die Arten zu achten. Hierfür haben wir drei Donut-Diagramme erstellt, die die Häufigkeit der verschiedenen Phishingarten darstellt. Um auf den ersten Blick erkennen zu lassen, um welche Art es sich handelt haben wir neben Text auch Bilder verwendet.
 
 ```
 def get_link_donut(self, darkmode=True, show_text=True):
@@ -553,7 +553,7 @@ def get_link_donut(self, darkmode=True, show_text=True):
     return self.update_donut_fig(fig, "E269", "Link aufrufen", darkmode, text)
 ```
 
-Um die Diagramme gleich aussehen zu lassen, haben wir die Funktion update_donut_fig(figure, img_name, inner_text, darkmode, text_below) hier wird jede figure überarbeitet und mit den nötigen Einstellungen versehen. Im nächsten Abschnitt werden teile des Codes gezeigt:
+Um die Diagramme gleich aussehen zu lassen, haben wir die Funktion update_donut_fig(figure, img_name, inner_text, darkmode, text_below) geschrieben. Hier wird jede figure überarbeitet und mit den nötigen Einstellungen versehen. Im nächsten Abschnitt werden Teile des Codes abgebildet:
 
 ```
 def update_donut_fig(self, fig, img_name, txt, darkmode, expl_txt="" ):
@@ -600,7 +600,7 @@ def update_donut_fig(self, fig, img_name, txt, darkmode, expl_txt="" ):
 
 #### Phishing Zielgruppen
 
-Hier wollten wir noch einmal darstellen, wer besonders anfällig ist für Phishing Mails. Dafür haben wir ein Balkendiagramm erstellt. Dem Nutzer wird hier die Möglichkeit geboten zu wählen, ob er die Fehlequoten der Abteilungen oder Branchen filtern möchte. Ebenfalls kann er seine Branche/ Abteilung hervorheben.
+Hier wollten wir noch einmal darstellen, wer besonders anfällig ist für Phishing-Mails. Dafür haben wir ein Balkendiagramm erstellt. Dem Nutzer wird hier die Möglichkeit geboten zu wählen, ob er die Fehlerquoten der Abteilungen oder Branchen filtern möchte. Ebenfalls kann er seine Branche/ Abteilung hervorheben.
 
 :::{note}
 
@@ -610,7 +610,7 @@ Der genaue Code für die Diagrammerstellung wird nicht dargestellt, da das Prinz
 
 ### password.py / Passwortsicherheit
 
-Zum einen sollen die Nutzer angeregt werden vielleicht eigene Passwörter in der Passwortwolke zu finden. Die wird mit der python Bibliothek wordcloud erzeugt.
+Zum einen sollen die Nutzer angeregt werden vielleicht eigene Passwörter in der Passwortwolke zu finden. Die wird mit der Python-Bibliothek wordcloud erzeugt.
 
 ```
 self.df.isna().sum() # Bearbeiten des Dataframes
@@ -644,7 +644,7 @@ return self.word_cloud.to_image() # Wordcloud wird als Bild zurückgegeben
 ``` 
 
 
-Neben der Wordcloud können Nutzer ebenfalls ihr Passwort auf die Stärke testen lassen. Die Stärke des Passworts wird so berechnet, dass alle Möglichkeiten an Zeichen genommen werden und mit der Länge des Passworts potentiert werden. Es wird davon ausgegangen, dass ein Computer 1.000.000.000 Variationen austesten kann.
+Neben der Wordcloud können Nutzer ebenfalls ihr Passwort auf die Stärke testen lassen. Die Stärke des Passworts wird so berechnet, dass alle Möglichkeiten an Zeichen genommen werden und mit der Länge des Passworts potenziert werden. Es wird davon ausgegangen, dass ein Computer 1.000.000.000 Variationen austesten kann.
 
 ```
 # Formel für die Berechnung
