@@ -72,6 +72,14 @@ Beim Logo wurde ein Schutzschild als Grundlage gewählt, da dieses Symbol häufi
 ![Logo LaCTiS](LaCTis_Logo.png)
 Abbildung 7 Logo LaCTiS
 
+### Arbeitsweise
+Zur Versionsverwaltung unserer Software-Entwicklung haben wir den netzbasierten Dienst GitHub verwendet. Da wir zu Zweit an dem Projekt gearbeitet haben konnten wir unsere Ergebnisse immer zusammenfügen. Dabei haben wir vor allem bei der Erstellung des Dashboards und der Reports mit zwei Branches gearbeitet. So konnten wir gleichzeitig an dem Projekt, jeder in seinem eigenen Branch, arbeiten. In regelmäßigen und für uns sinnvoll erscheinen Abständen haben wir unsere Ergbnisse durch git-merge zusammengefügt.
+Als Quelltext-Editor haben wir uns für den kostenlosen Editor Visual Studio Code von Mircosoft entschieden, da wir diesen bereits von vorherigen Projekten kannten. Unsere Ergebnisse wurden alle in Pyhton-Dateien geschrieben, da wir hier einfacher mit Klassen und Methoden arbeiten konnten. Zur Bearbeitung von den DataFrames und zur Entwicklung von den Diagrammen mit Plotly Express, Plotly Go, etc. haben zunächst IPYNB-Dateien erstellt. Hier konnten wir die DataFrames gut bearbeiten und die Diagramme entwickeln, da man immer eine direkte Rückmeldung bzw. ein Ergebnis bekommt. Das erleichert die Entwicklung. Für die weitere Entwicklung des Dashboards wurden die IPYNB-Dateien dann in Python-Datein überführt.
+Insgesamt haben wir unsere Ideen gemeinsam erarbeitet bzw. gebrainstormt. Den Code haben wir dann meist in Einzelarbeit, aber auch in PairProgramming geschrieben. Außerdem haben wir an den Wochenenden und der vorlesungsfreien Zeit einige Hackathons durchgeführt. Insgesamt haben wir sehr gut zusammen gearbeitet und uns gegenseitig immer bei Fragen oder Problemen geholfen.
+Als Kollaraborations-Plattform haben wir Teams verwendet. Dort haben wir Dokumente und Dateien für die explorative Phase geteilt, uns in virtuellen Räumen getroffen und in einem Kanban-Board unsere Fortschritte, sowie Aufgaben dokumentiert.
+
+
+
 
 :::{note}
 SpiceTech :D das schreibt Tim :P .
