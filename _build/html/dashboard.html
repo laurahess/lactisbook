@@ -1,0 +1,1006 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard &#8212; The Juypter book - Dokumentation von Tim Kossmann und Laura Heß</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Reports" href="report.html" />
+    <link rel="prev" title="Ideengenerierung und Dasboardaufbau" href="start.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/LaCTiS_Logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">The Juypter book - Dokumentation von Tim Kossmann und Laura Heß</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to the Jupyter Book Documentation from LaCTiS
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown.html">
+   Markdown Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="start.html">
+   Ideengenerierung und Dasboardaufbau
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Dashboard
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="report.html">
+   Reports
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks.html">
+   Content with notebooks
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/dashboard.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fdashboard.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#genereller-aufbau">
+   Genereller Aufbau
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#farbauswahl">
+   Farbauswahl
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#verwendete-technologien">
+   Verwendete Technologien
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#applikation">
+     Applikation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#datenhandling">
+     Datenhandling
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#diagramme">
+     Diagramme
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ordnerstruktur-und-technischer-aufbau">
+   Ordnerstruktur und Technischer Aufbau
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#beispiel-fur-das-umsetzen-eines-diagramms">
+     Beispiel für das Umsetzen eines Diagramms
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dashboard-py-einstiegspunkt">
+     dashboard.py / Einstiegspunkt
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-breaches-cost-py-schaden-durch-hacks">
+     data_breaches_cost.py / Schaden durch Hacks
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#summierte-schaden">
+       Summierte Schäden
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vorfalle-fur-das-ausgewahlte-jahr">
+       Vorfälle für das ausgewählte Jahr
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-breaches-attack-vectors-py-hackermethoden">
+     data_breaches_attack_vectors.py / Hackermethoden
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#phishing-py-phishing">
+     phishing.py / Phishing
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#phishing-arten">
+       Phishing Arten
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#phishing-zielgruppen">
+       Phishing Zielgruppen
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#password-py-passwortsicherheit">
+     password.py / Passwortsicherheit
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="dashboard">
+<h1>Dashboard<a class="headerlink" href="#dashboard" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Hier wird erläutert, wie das Dashboard aufgebaut ist, welche Technologien wir verwendet haben und wie wir das Ganze technisch umgesetzt haben.</p>
+<p>Die Codebeispiele können dabei leicht abweichen um es für den Leser besser verständlich zu machen.</p>
+</div>
+<div class="section" id="genereller-aufbau">
+<h2>Genereller Aufbau<a class="headerlink" href="#genereller-aufbau" title="Permalink to this headline">¶</a></h2>
+<p>Das Dashboard besteht aus mehreren Tabs, die unterschiedliche Themen behandeln. Dabei gehen wir Thematisch vor. Zunächst kann man sich im Tab “Schaden durch Hacks” einen ersten Überblick verschaffen, was für Schäden Cyber Attacken im Allgemeinen nach sich ziehen. Um sich weiter zu informieren wird im Tab “Hackermethoden” genauer darauf eingegangen, wie Hacks durchgeführt werden und welche Arten am meisten verbreitet sind. Die zweit häufigsten Angriffe, mit der Schwachstelle Mensch sind Phishing Attacken. Deswegen kann sich der Nutzer im Tab “Phishing” über mögliche Absichten von solchen Mails informieren und auch schauen, welche Branchen und Abteilungen häufig betroffen sind. Im letzten Tab “Passwortsicherheit” wird, wie der Name schon sagt, dann noch auf die Passwortsicherheit ein. Hier kann der Nutzer Passörter testen und schauen, ob sich vielleicht eins seiner verwendeten Passwörter in der Wordcloud der meist verwendeten Passwörter wiederfindet.</p>
+</div>
+<div class="section" id="farbauswahl">
+<h2>Farbauswahl<a class="headerlink" href="#farbauswahl" title="Permalink to this headline">¶</a></h2>
+<p>Wir haben uns für ein dunklen Hintergrund entschieden da dies oft angenehmer für den Nutzer ist. Die Daten haben wir in einem hellblauton dargestellt. Aktzente haben wir mit einem dunklen Lila gesetzt. Dadurch wollen wir die Aufmerksamkeit des Nutzers lenken. Es ist auffallend genug aber nicht so aggressiv wie ein rot.</p>
+</div>
+<div class="section" id="verwendete-technologien">
+<h2>Verwendete Technologien<a class="headerlink" href="#verwendete-technologien" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="applikation">
+<h3>Applikation<a class="headerlink" href="#applikation" title="Permalink to this headline">¶</a></h3>
+<p>Das Dashboard haben wir mit Dash umgesetzt. Die Applikation zu erstellen und zu starten war dann relativ einfach:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">dash</span>
+<span class="n">app</span> <span class="o">=</span> <span class="n">dash</span><span class="o">.</span><span class="n">Dash</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run_server</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+</pre></div>
+</div>
+<p>Für die Gestaltung des Dashboard haben wir eine app.css Datei erstellt, die wir im Ordner assets hinterlegt haben. Hier wurden Sachen definiert wie beispielsweise die Hintergrundfarbe sowie das Aussehen der Überschriften:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">body</span> <span class="p">{</span>
+    <span class="n">font</span><span class="o">-</span><span class="n">family</span><span class="p">:</span> <span class="n">sans</span><span class="o">-</span><span class="n">serif</span><span class="p">;</span>
+    <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="c1">#072542;</span>
+    <span class="n">color</span><span class="p">:</span> <span class="c1">#FFFFFF;</span>
+<span class="p">}</span>
+<span class="n">h1</span><span class="p">,</span> <span class="n">h2</span><span class="p">,</span> <span class="n">h3</span><span class="p">,</span> <span class="n">h4</span><span class="p">,</span> <span class="n">h5</span><span class="p">,</span> <span class="n">h6</span> <span class="p">{</span>
+    <span class="n">color</span><span class="p">:</span> <span class="c1">#FFFFFF;</span>
+    <span class="n">text</span><span class="o">-</span><span class="n">align</span><span class="p">:</span> <span class="n">center</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="datenhandling">
+<h3>Datenhandling<a class="headerlink" href="#datenhandling" title="Permalink to this headline">¶</a></h3>
+<p>Die Daten haben, die wir verwenden, liegen uns zu Beginn in Excel vor. Mit dem Framework Pandas lesen wir diese Daten ein und bearbeiten sie. Pandas verwenden wir als zentrales Tool um Daten zu manipulieren und auch um Daten am Ende für den Export bereit zu stellen.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">&quot;./datasets/DataBreaches.xlsx&quot;</span><span class="p">)</span>
+
+<span class="bp">self</span><span class="o">.</span><span class="n">df</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span> <span class="p">{</span><span class="s1">&#39;year   &#39;</span><span class="p">:</span><span class="s1">&#39;year&#39;</span><span class="p">})</span> <span class="c1"># Spalte year umbennenen (aufgrund von Leerzeichen nach &quot;year&quot;)</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">df</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">[[</span><span class="mi">0</span><span class="p">]])</span> <span class="c1"># Löschen der ersten Zeile</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;year&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;year&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;int&quot;</span><span class="p">)</span> <span class="c1"># Umwandlung des Datentyps von Year von Object in Integer mit der typecasting_from_column-Methode</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;records lost&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;records lost&quot;</span><span class="p">])</span> <span class="c1"># Umwandlung des Datentyps von records lost von Object in numeric</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;organisation&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;organisation&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;string&quot;</span><span class="p">)</span> <span class="c1"># Umwandlung des Datentyps von Organisation von Object in string</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;organisation_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+</pre></div>
+</div>
+<p>Das Dataframe kann dann in der ganzen Klasse verwendet werden um Diagramme zu erstellen oder zum Download bereit gestellt werden.</p>
+<p>Das Framework ist dabei sehr tiefgehend und bietet viele Funktionen, die wir leider nicht alle verstehen oder noch nicht richtig anwenden können. Deswegen mussten wir auch häufig Workarounds für bestimmte Probleme finden. Zum Beispiel wollten wir einmal die Zeitpunkt von Databreaches gleichmäßig im Monat verteilen, sodass im Scatter-Plot-Diagramm die Daten nicht übereinander liegen sondern sich gelichmäßig verteilen:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="mi">2004</span><span class="p">,</span> <span class="mi">2022</span><span class="p">):</span>
+    <span class="c1"># Herausfiltern der Firmennamen, bei denen die Schaden zu den größten 10% gehören, damit kleinere Punkte keine Beschriftung haben</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;organisation_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">year</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;records lost&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;records lost&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="o">*</span><span class="mf">0.1</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;organisation&#39;</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;organisation_name&#39;</span><span class="p">])</span>
+    
+    <span class="c1"># gleichmäßiges Verteilen der einzelnen Vorfälle auf einen Monat</span>
+    <span class="k">for</span> <span class="n">month</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">13</span><span class="p">):</span>
+        <span class="n">date</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;-&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">month</span><span class="p">)</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;-01&#39;</span>
+
+        <span class="n">new_df</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;date&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">date</span><span class="p">)]</span>
+
+        <span class="n">step</span> <span class="o">=</span> <span class="mi">30</span><span class="o">//</span><span class="p">(</span><span class="n">new_df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Stepgröße um zu berechnen, in welchem Abstand die Vorfälle platziert werden</span>
+        <span class="n">start</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">new_df</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">index</span><span class="p">,</span> <span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1">-</span><span class="si">%s</span><span class="s1">-</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">month</span><span class="p">)</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">start</span><span class="o">+</span><span class="n">step</span><span class="p">)</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+            <span class="n">start</span> <span class="o">+=</span> <span class="n">step</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="diagramme">
+<h3>Diagramme<a class="headerlink" href="#diagramme" title="Permalink to this headline">¶</a></h3>
+<p>Die Diagramme haben wir zum großen Teil mit Plotly Express erstellt. Die Diagramme konnten dadurch im ersten Schritt schnell erstellt werden aus den vorhandenen Daten.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">df_fig1</span><span class="p">,</span> 
+    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;year&quot;</span><span class="p">,</span> 
+    <span class="n">y</span><span class="o">=</span><span class="s2">&quot;records lost&quot;</span><span class="p">,</span> 
+    <span class="n">labels</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;year&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;records lost&quot;</span><span class="p">:</span> <span class="s2">&quot;entstandener Schaden (in Mrd. US$)&quot;</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="n">title</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> 
+    <span class="n">markers</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+
+</pre></div>
+</div>
+<p>Die Anpassung und der feinschliff war dafür leider etwas schwieriger und teilweise konnten wir bestimmte Vorhaben auch nicht umsetzen.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">showgrid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">title_font_family</span><span class="o">=</span><span class="s2">&quot;Arial&quot;</span><span class="p">,</span> <span class="n">title_font_color</span><span class="o">=</span><span class="n">color</span><span class="p">)</span>
+        <span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">showgrid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">title_font_family</span><span class="o">=</span><span class="s2">&quot;Arial&quot;</span><span class="p">,</span> <span class="n">title_font_color</span><span class="o">=</span><span class="n">color</span><span class="p">)</span>
+        <span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+
+            <span class="c1"># Anpassen des Titels</span>
+            <span class="n">title</span><span class="o">=</span><span class="p">{</span>
+                <span class="s1">&#39;text&#39;</span><span class="p">:</span> <span class="s2">&quot;Verlauf des enstandenen Schadens durch Datenlecks&quot;</span><span class="p">,</span>
+                <span class="c1"># Titel linksbündig an die y-Achse anpassen</span>
+                <span class="s1">&#39;y&#39;</span><span class="p">:</span><span class="mf">0.87</span><span class="p">,</span> <span class="c1"># Fehleranfällig, da die Größe des Diagramms über die Position der Überschrift bestimmt</span>
+                <span class="s1">&#39;x&#39;</span><span class="p">:</span><span class="mf">0.0</span><span class="p">,</span>
+                <span class="s1">&#39;xref&#39;</span><span class="p">:</span> <span class="s2">&quot;paper&quot;</span><span class="p">,</span>
+                <span class="s1">&#39;xanchor&#39;</span><span class="p">:</span> <span class="s1">&#39;left&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;yanchor&#39;</span><span class="p">:</span> <span class="s1">&#39;top&#39;</span>
+            <span class="p">},</span>
+
+            <span class="c1"># Hier wird der Hintergrund transparent gemacht und die Schriftfarbe je nach Darkmoder bestimmt (siehe Report/Allgemein/Diagramm Anpassungen)</span>
+            <span class="n">plot_bgcolor</span> <span class="o">=</span> <span class="s2">&quot;rgba(0,0,0,0)&quot;</span><span class="p">,</span>
+            <span class="n">paper_bgcolor</span> <span class="o">=</span> <span class="s2">&quot;rgba(0,0,0,0)&quot;</span><span class="p">,</span>
+            <span class="n">font_color</span><span class="o">=</span><span class="n">color</span><span class="p">,</span>
+
+            <span class="c1"># Anpassen der X- und Y-Achse</span>
+            <span class="n">xaxis</span><span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+                <span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="mi">7</span> <span class="o">-</span> <span class="mf">0.5</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">],</span>
+                <span class="n">dtick</span><span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="n">ticks</span> <span class="o">=</span> <span class="s2">&quot;outside&quot;</span><span class="p">,</span>
+                <span class="n">tickwidth</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="n">tickcolor</span> <span class="o">=</span> <span class="n">color</span><span class="p">,</span>
+                <span class="n">ticklen</span> <span class="o">=</span> <span class="mi">8</span><span class="p">,</span>
+                <span class="n">tickfont</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">family</span> <span class="o">=</span> <span class="s1">&#39;Arial&#39;</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">14</span><span class="p">),</span>
+                <span class="n">showline</span> <span class="o">=</span> <span class="ow">not</span> <span class="n">darkmode</span><span class="p">,</span>
+                <span class="n">linewidth</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="n">linecolor</span> <span class="o">=</span> <span class="n">color</span><span class="p">,</span>
+            <span class="p">),</span>
+
+            <span class="n">yaxis</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+                <span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">df_fig1</span><span class="p">[</span><span class="s1">&#39;records lost&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="o">*</span><span class="mf">1.2</span><span class="p">],</span>
+                <span class="n">ticks</span> <span class="o">=</span> <span class="s2">&quot;outside&quot;</span><span class="p">,</span>
+                <span class="n">tickwidth</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="n">tickcolor</span> <span class="o">=</span> <span class="n">color</span><span class="p">,</span>
+                <span class="n">ticklen</span> <span class="o">=</span> <span class="mi">8</span><span class="p">,</span>
+                <span class="n">ticklabelposition</span><span class="o">=</span><span class="s2">&quot;outside&quot;</span><span class="p">,</span>
+                <span class="n">showline</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+                <span class="n">linewidth</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="n">linecolor</span> <span class="o">=</span> <span class="n">color</span><span class="p">,</span>
+            <span class="p">),</span>
+        <span class="p">)</span>
+        
+        <span class="c1"># Anpassen der Farbe der Linien</span>
+        <span class="n">fig</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span>
+            <span class="n">marker</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+                <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;#4DDBE3&#39;</span><span class="p">,</span>
+                <span class="n">size</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+                <span class="n">opacity</span> <span class="o">=</span> <span class="mf">0.8</span><span class="p">,</span>
+            <span class="p">),</span>
+            <span class="n">line</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+                <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;#4DDBE3&#39;</span><span class="p">,</span>
+                <span class="n">width</span> <span class="o">=</span> <span class="mi">2</span>
+            <span class="p">),</span>
+        <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="ordnerstruktur-und-technischer-aufbau">
+<h2>Ordnerstruktur und Technischer Aufbau<a class="headerlink" href="#ordnerstruktur-und-technischer-aufbau" title="Permalink to this headline">¶</a></h2>
+<p>Die Struktur haben wir so aufgebaut, dass wir für jeden Tab eine eigene Klasse erstellt haben. Jede Klasse bietet dabei eine get_layout() Funktion, die das Dash Layout zurückgibt. Durch das aufteilen konnte sowohl Hauptdatei deutlich übersichtlicher gestaltet werden und man wusste direkt, wo man suchen sollte, wenn ein Fehler auftritt. Wir haben uns auch dafür entschieden die einzelnen Diagramme für die Seiten ebenfalls in eigenen Klassen zu verwalten. Dadurch wurde die Logik von Diagramm erstellen und Dashboard sauber voneinander getrennt.</p>
+<p><strong>Problem</strong></p>
+<p>Eigentlich wollten wir auch die Funktionen für die einzelnen Tabs in den Klassen definieren, wo wir auch das Layout festgelegt haben. Allerdings können Funktionen dort nicht an die Dashboard-App eingefügt werden. Deswegen mussten wir alle Funktionen in der Dashboard Datei erstellen.</p>
+<div class="section" id="beispiel-fur-das-umsetzen-eines-diagramms">
+<h3>Beispiel für das Umsetzen eines Diagramms<a class="headerlink" href="#beispiel-fur-das-umsetzen-eines-diagramms" title="Permalink to this headline">¶</a></h3>
+<p>Im folgenden Beispiel wird erklärt, wie die Diagramme im Dashboard angezeigt werden.</p>
+<p>Das Layout wird zunächst in einer der Klassen für die Tabs festgelegt. Hier wird das Beispiel für die Arten von Hackerattacken dargestellt.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+<span class="k">def</span> <span class="nf">get_layout</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        
+    <span class="k">return</span> <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">(</span>
+        <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;attackVector-wrapper&quot;</span><span class="p">,</span>
+        <span class="n">className</span><span class="o">=</span><span class="s2">&quot;wrapper&quot;</span><span class="p">,</span>
+        <span class="n">children</span><span class="o">=</span><span class="p">[</span>
+            <span class="c1"># Linke Seite des Dashboard</span>
+            <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">(</span>
+                <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;left-side&quot;</span><span class="p">,</span>
+                <span class="n">children</span><span class="o">=</span><span class="p">[</span>
+                    <span class="n">html</span><span class="o">.</span><span class="n">H3</span><span class="p">(</span><span class="s2">&quot;Hackerarten und Angriffsziele&quot;</span><span class="p">),</span>
+                    <span class="n">html</span><span class="o">.</span><span class="n">Pre</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">&#39;click-data&#39;</span><span class="p">),</span>
+                    <span class="n">dcc</span><span class="o">.</span><span class="n">Graph</span><span class="p">(</span>
+                        <span class="nb">id</span><span class="o">=</span><span class="s1">&#39;attack-treemap&#39;</span><span class="p">,</span> 
+                        <span class="n">figure</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">atp</span><span class="o">.</span><span class="n">fig</span>
+                        <span class="p">),</span>
+                <span class="p">]),</span>
+            
+            <span class="c1"># Rechte Seite des Dashboards</span>
+            <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">(</span>
+                <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;right-side&quot;</span><span class="p">,</span>
+                <span class="n">children</span><span class="o">=</span><span class="p">[</span>
+                    <span class="n">html</span><span class="o">.</span><span class="n">H3</span><span class="p">(</span><span class="s2">&quot;Informationen&quot;</span><span class="p">),</span>
+                    <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">(</span>
+                        <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;information-wrapper&quot;</span><span class="p">,</span> 
+                        <span class="n">children</span><span class="o">=</span><span class="p">[</span>
+                            <span class="n">html</span><span class="o">.</span><span class="n">H4</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">&#39;name-attack&#39;</span><span class="p">,</span>
+                                <span class="n">children</span><span class="o">=</span><span class="p">[</span>
+                                    <span class="s2">&quot;Hinweis&quot;</span>
+                                <span class="p">]</span>
+                            <span class="p">),</span>
+                            <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">&#39;info-attack&#39;</span><span class="p">,</span>
+                                <span class="n">children</span><span class="o">=</span><span class="p">[</span>
+                                    <span class="n">html</span><span class="o">.</span><span class="n">P</span><span class="p">(</span><span class="s2">&quot;Klicken Sie links auf die Bereiche zu denen Sie genauere Informationen haben möchten.&quot;</span><span class="p">)</span>
+                                <span class="p">]</span>
+                            <span class="p">),</span>
+                        <span class="p">]</span>
+                    <span class="p">),</span>
+                <span class="p">]</span>
+            <span class="p">),</span>
+
+            <span class="c1"># Footer mit Downloadbaren Inhalt</span>
+            <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">(</span>
+                <span class="n">className</span><span class="o">=</span><span class="s2">&quot;download-wrapper&quot;</span><span class="p">,</span>
+                <span class="n">children</span><span class="o">=</span>
+                <span class="p">[</span>
+                    <span class="n">html</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="s2">&quot;Daten herunterladen&quot;</span><span class="p">,</span> <span class="n">className</span><span class="o">=</span><span class="s2">&quot;btn_csv&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;attack_vectors_btn&quot;</span><span class="p">),</span>
+                    <span class="n">dcc</span><span class="o">.</span><span class="n">Download</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s2">&quot;download-attack_vectors-excel&quot;</span><span class="p">),</span>
+                <span class="p">]</span>
+            <span class="p">)</span>         
+        <span class="p">]</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<p>Im Bereich <strong>left-side</strong> wird der Platzhalter eingefügt in dem später das Diagramm angezeigt werden soll. Das Diagramm wird durch die Funktion in der <a class="reference external" href="http://dashboard.py">dashboard.py</a> Datei erzeugt.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">atp</span> <span class="o">=</span> <span class="n">Chart_AttackVectors</span>
+
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">callback</span><span class="p">(</span>
+    <span class="n">Output</span><span class="p">(</span><span class="s1">&#39;attack-treemap&#39;</span><span class="p">,</span> <span class="s1">&#39;figure&#39;</span><span class="p">),</span>
+    <span class="n">Input</span><span class="p">(</span><span class="s1">&#39;attack-treemap&#39;</span><span class="p">,</span> <span class="s1">&#39;clickData&#39;</span><span class="p">))</span>
+<span class="k">def</span> <span class="nf">display_click_data</span><span class="p">(</span><span class="n">clickData</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">atp</span><span class="o">.</span><span class="n">create_treemap</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Im Bereich <strong>right-side</strong> wird dann der Text für die jeweils angeklickte Hackermethode angezeigt.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dbav</span> <span class="o">=</span> <span class="n">AttackVectorsPage</span><span class="p">(</span><span class="n">app</span><span class="p">)</span> 
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">callback</span><span class="p">(</span>
+    <span class="n">Output</span><span class="p">(</span><span class="s1">&#39;info-attack&#39;</span><span class="p">,</span> <span class="s1">&#39;children&#39;</span><span class="p">),</span>
+    <span class="n">Input</span><span class="p">(</span><span class="s1">&#39;attack-treemap&#39;</span><span class="p">,</span> <span class="s1">&#39;clickData&#39;</span><span class="p">))</span>
+<span class="k">def</span> <span class="nf">display_attackVectors</span><span class="p">(</span><span class="n">clickData</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">html</span><span class="o">.</span><span class="n">P</span><span class="p">(</span><span class="n">dbav</span><span class="o">.</span><span class="n">get_information_attackVectors</span><span class="p">(</span><span class="n">clickData</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="dashboard-py-einstiegspunkt">
+<h3><a class="reference external" href="http://dashboard.py">dashboard.py</a> / Einstiegspunkt<a class="headerlink" href="#dashboard-py-einstiegspunkt" title="Permalink to this headline">¶</a></h3>
+<p>Der Einstiegspunkt der Appliktaion bietet die “<a class="reference external" href="http://dashboard.py">dashboard.py</a>” Datei. Hier wird die Dash-App erzeugt und mit dem grundlegendem Layout sowie allen Funktionen die im Dashboard gebraucht werden erzeugt. Im Layout legen wir zunächst nur das Aussehen des Headers fest.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+<span class="n">app</span><span class="o">.</span><span class="n">layout</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;backroudColor&#39;</span><span class="p">:</span> <span class="s1">&#39;green&#39;</span><span class="p">},</span> <span class="n">children</span><span class="o">=</span><span class="p">[</span>
+    <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">([</span>
+        <span class="n">html</span><span class="o">.</span><span class="n">Header</span><span class="p">(</span><span class="n">children</span><span class="o">=</span><span class="p">[</span>
+            <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">(</span>
+                <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;app-header&quot;</span><span class="p">,</span>
+                <span class="n">children</span><span class="o">=</span><span class="p">[</span>
+                    <span class="c1"># Festlegen des Titels</span>
+
+                    <span class="n">html</span><span class="o">.</span><span class="n">H1</span><span class="p">(</span>
+                        <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;app-title&quot;</span><span class="p">,</span>
+                        <span class="n">children</span><span class="o">=</span><span class="s1">&#39;Welcome to LaCTiS&#39;</span><span class="p">,</span>
+                        <span class="n">style</span><span class="o">=</span><span class="p">{</span>
+                            
+                        <span class="p">}</span>
+                    <span class="p">),</span>
+
+                    <span class="c1"># Abschnitt der einzlenen Tabs</span>
+                    <span class="n">dcc</span><span class="o">.</span><span class="n">Tabs</span><span class="p">(</span>
+                        <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;tabs-container&quot;</span><span class="p">,</span> 
+                        <span class="n">value</span><span class="o">=</span><span class="s1">&#39;tab_databreaches&#39;</span><span class="p">,</span> 
+                        <span class="n">parent_className</span><span class="o">=</span><span class="s1">&#39;custom-tabs&#39;</span><span class="p">,</span>
+
+                        <span class="n">children</span><span class="o">=</span><span class="p">[</span>
+                            <span class="n">dcc</span><span class="o">.</span><span class="n">Tab</span><span class="p">(</span>
+                                <span class="n">className</span><span class="o">=</span><span class="s2">&quot;custom-tab&quot;</span><span class="p">,</span> 
+                                <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Schaden durch Hacks&#39;</span><span class="p">,</span> 
+                                <span class="n">value</span><span class="o">=</span><span class="s1">&#39;tab_databreaches&#39;</span><span class="p">,</span>
+                                <span class="n">selected_className</span><span class="o">=</span><span class="s1">&#39;custom-tab--selected&#39;</span>
+                            <span class="p">),</span>
+                            <span class="n">dcc</span><span class="o">.</span><span class="n">Tab</span><span class="p">(</span>
+                                <span class="n">className</span><span class="o">=</span><span class="s2">&quot;custom-tab&quot;</span><span class="p">,</span> 
+                                <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Hackermethoden&#39;</span><span class="p">,</span> 
+                                <span class="n">value</span><span class="o">=</span><span class="s1">&#39;tab_methods&#39;</span><span class="p">,</span>
+                                <span class="n">selected_className</span><span class="o">=</span><span class="s1">&#39;custom-tab--selected&#39;</span>
+                            <span class="p">),</span>
+                            <span class="n">dcc</span><span class="o">.</span><span class="n">Tab</span><span class="p">(</span>
+                                <span class="n">className</span><span class="o">=</span><span class="s2">&quot;custom-tab&quot;</span><span class="p">,</span> 
+                                <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Phishing&#39;</span><span class="p">,</span> 
+                                <span class="n">value</span><span class="o">=</span><span class="s1">&#39;tab_phishing&#39;</span><span class="p">,</span>
+                                <span class="n">selected_className</span><span class="o">=</span><span class="s1">&#39;custom-tab--selected&#39;</span>
+                            <span class="p">),</span>
+                            <span class="n">dcc</span><span class="o">.</span><span class="n">Tab</span><span class="p">(</span>
+                                <span class="n">className</span><span class="o">=</span><span class="s2">&quot;custom-tab&quot;</span><span class="p">,</span> 
+                                <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Passwortsicherheit&#39;</span><span class="p">,</span> 
+                                <span class="n">value</span><span class="o">=</span><span class="s1">&#39;tab_password&#39;</span><span class="p">,</span>
+                                <span class="n">selected_className</span><span class="o">=</span><span class="s1">&#39;custom-tab--selected&#39;</span>
+                            <span class="p">),</span>
+                        <span class="p">]</span>
+                    <span class="p">),</span>  
+                <span class="p">]</span>
+            <span class="p">),</span>
+        <span class="p">]),</span>
+        <span class="n">html</span><span class="o">.</span><span class="n">Br</span><span class="p">(),</span><span class="n">html</span><span class="o">.</span><span class="n">Br</span><span class="p">(),</span><span class="n">html</span><span class="o">.</span><span class="n">Br</span><span class="p">(),</span>
+        
+        <span class="c1"># Hier wird der Inhalt dynamisch je nach Tabauswahl erzeugt</span>
+        <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s2">&quot;tabs-content&quot;</span><span class="p">)</span>
+    <span class="p">]),</span>
+     
+<span class="p">])</span>
+</pre></div>
+</div>
+<p>Die Tabauswahl beeinflusst dann, welches Layout dann als Inhalt der Seite angezeigt werden:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@app</span><span class="o">.</span><span class="n">callback</span><span class="p">(</span><span class="n">Output</span><span class="p">(</span><span class="s1">&#39;tabs-content&#39;</span><span class="p">,</span> <span class="s1">&#39;children&#39;</span><span class="p">),</span>
+              <span class="n">Input</span><span class="p">(</span><span class="s1">&#39;tabs-container&#39;</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">))</span>
+<span class="k">def</span> <span class="nf">render_content</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">tab</span> <span class="o">==</span> <span class="s1">&#39;tab_password&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">pp</span><span class="o">.</span><span class="n">get_layout</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">tab</span> <span class="o">==</span> <span class="s1">&#39;tab_methods&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">dbav</span><span class="o">.</span><span class="n">get_layout</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">tab</span> <span class="o">==</span> <span class="s1">&#39;tab_databreaches&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">dbp</span><span class="o">.</span><span class="n">get_layout</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">tab</span> <span class="o">==</span> <span class="s1">&#39;tab_phishing&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">phishing</span><span class="o">.</span><span class="n">get_layout</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="data-breaches-cost-py-schaden-durch-hacks">
+<h3>data_breaches_cost.py / Schaden durch Hacks<a class="headerlink" href="#data-breaches-cost-py-schaden-durch-hacks" title="Permalink to this headline">¶</a></h3>
+<p>Hier wollen wir dem Nutzer klar machen, was für Schaden Cyber Attacken anrichten können. Der Anwender kann sehen, wie sich die Summe der einzelnen Jahre, sowie der Durchschnitt verhält. Ebenfalls wird dargestellt, was die größten Schäden durch Datenlecks bei einzelnen Firmen in einem Jahr waren. Dem Nutzer wird außerdem ein Slider angeboten, mit dem er verschiedene Jahre auswählen kann.</p>
+<p><strong>Was nicht ging</strong></p>
+<p>Eigentlich wollten wir den Titel der y-Achse linksbündig machen. Allerdings bietet plotly express keine Möglichkeit die Titel in ihrer Position anzupassen. Ein Versuch den wir unternommen haben, war eine Annotation einzufügen den wir als Titel verwenden können. Das Problem war, dass die Annotation nur im Prozentverhältnis vom gesamten Diagramm oder der Zeichenfläche dargestellt werden kann. Wenn das Diagramm nun in einem anderen Format benötigt wird, verschiebt es diese wieder und müsste eigentlich angepasst werden.</p>
+<div class="section" id="summierte-schaden">
+<h4>Summierte Schäden<a class="headerlink" href="#summierte-schaden" title="Permalink to this headline">¶</a></h4>
+<p>Es werden für die einzelnen Jahre die Schäden summiert und dargestellt. Um dem Nutzer ein Gefühl zu geben, ob es eher zunimmt oder abnimmt haben wir ebenfalls den Durchschnitt berechnet.
+Das Diagramm besteht dabei eigentlich aus vier Diagrammen:</p>
+<ul class="simple">
+<li><p><strong>Summe der Einzelnen Jahre</strong></p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sum_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">])[</span><span class="s1">&#39;records lost&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">/</span><span class="mi">1000</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+<span class="n">df_fig1</span> <span class="o">=</span> <span class="p">(</span><span class="n">sum_df</span><span class="p">)</span>
+        <span class="n">df_fig1</span> <span class="o">=</span> <span class="n">df_fig1</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df_fig1</span><span class="p">[</span><span class="s2">&quot;year&quot;</span><span class="p">]</span><span class="o">&gt;=</span> <span class="mi">2014</span><span class="p">]</span>
+        <span class="c1"># print(df_fig1.head())</span>
+        <span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">df_fig1</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;year&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;records lost&quot;</span><span class="p">,</span> 
+                                <span class="n">labels</span><span class="o">=</span><span class="p">{</span>
+                                <span class="s2">&quot;year&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                                <span class="s2">&quot;records lost&quot;</span><span class="p">:</span> <span class="s2">&quot;entstandener Schaden (in Mrd. US$)&quot;</span><span class="p">,</span>
+
+                                <span class="p">},</span>
+                                
+
+                                <span class="n">title</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">markers</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="n">fig</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">showgrid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">title_font_family</span><span class="o">=</span><span class="s2">&quot;Arial&quot;</span><span class="p">,</span> <span class="n">title_font_color</span><span class="o">=</span><span class="n">color</span><span class="p">)</span>
+        <span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">showgrid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">title_font_family</span><span class="o">=</span><span class="s2">&quot;Arial&quot;</span><span class="p">,</span> <span class="n">title_font_color</span><span class="o">=</span><span class="n">color</span><span class="p">)</span>
+        <span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+            <span class="n">title</span><span class="o">=</span><span class="p">{</span>
+                <span class="s1">&#39;text&#39;</span><span class="p">:</span> <span class="s2">&quot;Verlauf des enstandenen Schadens durch Datenlecks&quot;</span><span class="p">,</span>
+                <span class="s1">&#39;y&#39;</span><span class="p">:</span><span class="mf">0.87</span><span class="p">,</span>
+                <span class="s1">&#39;x&#39;</span><span class="p">:</span><span class="mf">0.0</span><span class="p">,</span>
+                <span class="s1">&#39;xref&#39;</span><span class="p">:</span> <span class="s2">&quot;paper&quot;</span><span class="p">,</span>
+                <span class="s1">&#39;xanchor&#39;</span><span class="p">:</span> <span class="s1">&#39;left&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;yanchor&#39;</span><span class="p">:</span> <span class="s1">&#39;top&#39;</span><span class="p">},</span>
+            <span class="n">plot_bgcolor</span> <span class="o">=</span> <span class="s2">&quot;rgba(0,0,0,0)&quot;</span><span class="p">,</span>
+            <span class="n">paper_bgcolor</span> <span class="o">=</span> <span class="s2">&quot;rgba(0,0,0,0)&quot;</span><span class="p">,</span>
+            <span class="n">font_color</span><span class="o">=</span><span class="n">color</span><span class="p">,</span>
+
+        
+            <span class="n">xaxis</span><span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+                <span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="mi">7</span> <span class="o">-</span> <span class="mf">0.5</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">],</span>
+                <span class="n">dtick</span><span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="n">ticks</span> <span class="o">=</span> <span class="s2">&quot;outside&quot;</span><span class="p">,</span>
+                <span class="n">tickwidth</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="n">tickcolor</span> <span class="o">=</span> <span class="n">color</span><span class="p">,</span>
+                <span class="n">ticklen</span> <span class="o">=</span> <span class="mi">8</span><span class="p">,</span>
+                <span class="n">tickfont</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">family</span> <span class="o">=</span> <span class="s1">&#39;Arial&#39;</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">14</span><span class="p">),</span>
+                <span class="n">showline</span> <span class="o">=</span> <span class="ow">not</span> <span class="n">darkmode</span><span class="p">,</span>
+                <span class="n">linewidth</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="n">linecolor</span> <span class="o">=</span> <span class="n">color</span><span class="p">,</span>
+                
+                
+
+                
+                <span class="p">),</span>
+            <span class="n">yaxis</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+                <span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">df_fig1</span><span class="p">[</span><span class="s1">&#39;records lost&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="o">*</span><span class="mf">1.2</span><span class="p">],</span>
+                <span class="n">ticks</span> <span class="o">=</span> <span class="s2">&quot;outside&quot;</span><span class="p">,</span>
+                <span class="n">tickwidth</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="n">tickcolor</span> <span class="o">=</span> <span class="n">color</span><span class="p">,</span>
+                <span class="n">ticklen</span> <span class="o">=</span> <span class="mi">8</span><span class="p">,</span>
+                <span class="n">ticklabelposition</span><span class="o">=</span><span class="s2">&quot;outside&quot;</span><span class="p">,</span>
+                <span class="n">showline</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+                <span class="n">linewidth</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="n">linecolor</span> <span class="o">=</span> <span class="n">color</span><span class="p">,</span>
+                
+                <span class="p">),</span>
+            <span class="p">)</span>
+        
+
+        <span class="n">fig</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span>
+            <span class="n">marker</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+                <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;#4DDBE3&#39;</span><span class="p">,</span>
+                <span class="n">size</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+                <span class="n">opacity</span> <span class="o">=</span> <span class="mf">0.8</span><span class="p">,</span>
+            <span class="p">),</span>
+            <span class="n">line</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+                <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;#4DDBE3&#39;</span><span class="p">,</span>
+                <span class="n">width</span> <span class="o">=</span> <span class="mi">2</span>
+            <span class="p">),</span>
+        <span class="p">)</span>
+
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Durchschnitt über die Jahre</strong></p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">avg_fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">avg_year</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;year&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;avg&quot;</span><span class="p">,</span> 
+                        <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Testtitle&#39;</span><span class="p">,</span> <span class="n">markers</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">line_shape</span><span class="o">=</span><span class="s1">&#39;spline&#39;</span><span class="p">)</span>
+<span class="n">avg_fig</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span>
+    <span class="n">line</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="n">smoothing</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span>
+        <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;rgb(159, 90, 253)&#39;</span><span class="p">,</span>
+        <span class="n">width</span> <span class="o">=</span> <span class="mi">4</span>
+    <span class="p">),</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Punktmarker welches Jahr markiert ist für die Jahressumme (Scatterplot)</strong></p></li>
+<li><p><strong>Punktmarker welches Jahr markiert ist für den Durchschnitt (Scatterplot)</strong></p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">avg_point</span> <span class="o">=</span> <span class="n">avg_year</span><span class="p">[</span><span class="s1">&#39;avg&#39;</span><span class="p">][</span><span class="n">avg_year</span><span class="p">[</span><span class="s2">&quot;year&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">year</span><span class="p">)]</span>
+        <span class="n">sum_for_year</span> <span class="o">=</span> <span class="n">sum_df</span><span class="p">[</span><span class="n">sum_df</span><span class="p">[</span><span class="s2">&quot;year&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">year</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;records lost&#39;</span><span class="p">]</span>
+        <span class="n">switcher</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">sum_for_year</span> <span class="o">&lt;</span> <span class="n">avg_point</span><span class="p">):</span>
+            <span class="n">switcher</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+        <span class="n">fig2</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter</span><span class="p">({</span><span class="s2">&quot;year&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">year</span><span class="p">],</span> <span class="s2">&quot;avg&quot;</span><span class="p">:</span><span class="n">avg_point</span><span class="p">},</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;year&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;avg&quot;</span><span class="p">)</span>
+        <span class="n">fig3</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter</span><span class="p">({</span><span class="s2">&quot;year&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">year</span><span class="p">],</span> <span class="s2">&quot;avg&quot;</span><span class="p">:</span><span class="n">sum_for_year</span><span class="p">},</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;year&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;avg&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Am Ende werden hier noch die Annotations hinzugefügt um die Punkte zu betiteln:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">year</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">avg_point</span><span class="p">,</span>
+    <span class="n">xref</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">,</span>
+    <span class="n">yref</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">,</span>
+    <span class="n">ayref</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">,</span>
+    <span class="n">yshift</span><span class="o">=-</span><span class="mi">30</span><span class="o">*</span><span class="n">switcher</span><span class="p">,</span>
+    <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span>
+        <span class="n">color</span><span class="o">=</span><span class="s2">&quot;rgb(159, 90, 253)&quot;</span>
+        <span class="p">),</span>
+    <span class="n">text</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Durchschnitt&lt;br&gt; </span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">avg_point</span><span class="o">.</span><span class="n">round</span><span class="p">())</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2"> $&quot;</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="s2">&quot;.&quot;</span><span class="p">),</span>
+    <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">bgcolor</span><span class="o">=</span><span class="n">bg_color</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">year</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">sum_for_year</span><span class="p">,</span>
+    <span class="n">xref</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">,</span>
+    <span class="n">yref</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">,</span>
+    <span class="n">ayref</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">,</span>
+    <span class="n">yshift</span><span class="o">=</span><span class="mi">50</span><span class="o">*</span><span class="n">switcher</span><span class="p">,</span>
+    <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span>
+        <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#4DDBE3&quot;</span>
+        <span class="p">),</span>
+    <span class="n">text</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Schaden im&lt;br&gt;Jahr </span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2">:&lt;br&gt; </span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">sum_for_year</span><span class="o">.</span><span class="n">round</span><span class="p">())</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2"> $&quot;</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="s2">&quot;.&quot;</span><span class="p">),</span>
+    <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">bgcolor</span><span class="o">=</span><span class="n">bg_color</span><span class="p">,</span>
+    
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="vorfalle-fur-das-ausgewahlte-jahr">
+<h4>Vorfälle für das ausgewählte Jahr<a class="headerlink" href="#vorfalle-fur-das-ausgewahlte-jahr" title="Permalink to this headline">¶</a></h4>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Der genaue Code für die Diagrammerstellung wird nicht dargestellt, da das Prinzip bereits im Abschnitt Summierte Schäden erläutert wurde.</p>
+</div>
+<p>Um das Diagramm gut darstellen zu können war es notwendig das Dataframe erst einmal zu bearbeiten (siehe Datenhandling). Dadurch war es möglich die Kreise weiter voneinander zu trennen und nur die Namen der Firmen zu nennen, die die größten Schäden erlitten.</p>
+</div>
+</div>
+<div class="section" id="data-breaches-attack-vectors-py-hackermethoden">
+<h3>data_breaches_attack_vectors.py / Hackermethoden<a class="headerlink" href="#data-breaches-attack-vectors-py-hackermethoden" title="Permalink to this headline">¶</a></h3>
+<p>Um die Hackermethoden gut darzustellen wollten wir die Daten als Treemap darstellen. Dabei stellt die größe der Felder dar, wie häufig das jeweilige Angriffsziel zu einem Datenleck führt.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">treemap</span><span class="p">(</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="p">,</span>  
+    <span class="n">path</span><span class="o">=</span><span class="p">[</span><span class="n">px</span><span class="o">.</span><span class="n">Constant</span><span class="p">(</span><span class="s2">&quot;Angriffsziele&quot;</span><span class="p">),</span> <span class="s1">&#39;Fehler&#39;</span><span class="p">,</span><span class="s1">&#39;Angriffspunkt&#39;</span><span class="p">],</span> 
+    <span class="n">values</span><span class="o">=</span><span class="s1">&#39;Häufigkeit von Data Breaches&#39;</span><span class="p">,</span>
+    <span class="n">labels</span><span class="o">=</span> <span class="s1">&#39;Angriffspunkt&#39;</span><span class="p">,</span>
+    <span class="n">color_continuous_scale</span><span class="o">=</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;rgb(7, 37, 66)&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="s1">&#39;rgb(77, 219, 227)&#39;</span><span class="p">]],</span> 
+    <span class="n">maxdepth</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> 
+    <span class="n">color</span><span class="o">=</span><span class="s1">&#39;Häufigkeit von Data Breaches&#39;</span><span class="p">,</span> 
+    <span class="n">hover_data</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Angriffspunkt&#39;</span><span class="p">],</span>
+<span class="p">)</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">clickmode</span><span class="o">=</span><span class="s1">&#39;event+select&#39;</span><span class="p">)</span> <span class="c1"># Um es möglich zu machen, dass der Nutzer auf Felder klicken kann </span>
+<span class="bp">self</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="c1">#uniformtext=dict(minsize=12, mode=&#39;show&#39;),</span>
+    <span class="n">margin</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">l</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">25</span><span class="p">),</span> 
+    <span class="n">plot_bgcolor</span><span class="o">=</span> <span class="s1">&#39;rgba(0, 0, 0, 0)&#39;</span><span class="p">,</span>
+    <span class="n">paper_bgcolor</span><span class="o">=</span> <span class="s1">&#39;rgba(0, 0, 0, 0)&#39;</span><span class="p">,</span>
+    <span class="n">showlegend</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="p">)</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">update_coloraxes</span><span class="p">(</span><span class="n">showscale</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Das besondere hierbei ist das Anzeigen der Informationen über die verschiedenen Hackermethoden. Der Nutzer hat hier die Möglichkeit auf Felder zu klicken, über das eher nähere Informationen haben möchte. Im Dashboard werden diese Daten neben dem Diagramm angezeigt.</p>
+<p><strong>Schwierigkeit</strong></p>
+<p>Eigentlich wollten wir die Informationen direkt im Diagramm anzeigen. Leider war das Problem, dass das Diagramm von plotly Express schon klickbar. Durch klicken wird eine kleine Animation ausgeführt, die in das Feld führt. Unsere Idee war die Information mittig im Diagramm anzuzeigen. Leider hätten wir dafür ein neues Diagramm erstellen müssen mit einer Annotation. Durch das ständige überschreiben der Treemap wurden zum einen die Animationen unterbrochen und wirkten dadurch komisch. Außerdem mussten wir das neue Diagramm so erstellen als hätte der Nutzer auf einen Wert geklickt. Das konnten wir zwar darstellen aber dann gab es keine Möglichkeit wieder zurück zu kommen.</p>
+</div>
+<div class="section" id="phishing-py-phishing">
+<h3><a class="reference external" href="http://phishing.py">phishing.py</a> / Phishing<a class="headerlink" href="#phishing-py-phishing" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="phishing-arten">
+<h4>Phishing Arten<a class="headerlink" href="#phishing-arten" title="Permalink to this headline">¶</a></h4>
+<p>Durch die Seite Phishing wollten wir die Nutzer vor allem nochmal sensibilisieren auf die Arten zu achten. Hierfür haben wir drei Donut-Diagramme erstellt, die die Häufigkeit der verschiedenen Phishingarten darstellt. Um auf den ersten Blick erkennen zu lassen, um welche Art es sich Handelt haben wir neben Text auch Bilder verwendet.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_link_donut</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">darkmode</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_text</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">pie</span><span class="p">({</span><span class="s2">&quot;link/no_link&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Link&quot;</span><span class="p">,</span> <span class="s2">&quot;No&quot;</span><span class="p">],</span> <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">link</span><span class="p">,</span> <span class="mi">100</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">link</span><span class="p">]},</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;link/no_link&quot;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">,</span> <span class="n">hole</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;link/no_link&quot;</span><span class="p">,</span> 
+    <span class="n">color_discrete_map</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;Link&quot;</span><span class="p">:</span> <span class="s1">&#39;rgb(62, 175, 182)&#39;</span><span class="p">,</span> <span class="s2">&quot;No&quot;</span><span class="p">:</span> <span class="s1">&#39;rgb(57, 81, 104)&#39;</span><span class="p">})</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">show_text</span><span class="p">:</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_text_for_dounut</span><span class="p">(</span><span class="s2">&quot;link&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">update_donut_fig</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="s2">&quot;E269&quot;</span><span class="p">,</span> <span class="s2">&quot;Link aufrufen&quot;</span><span class="p">,</span> <span class="n">darkmode</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Um die Diagramme gleich aussehen zu lassen, haben wir die Funktion update_donut_fig(figure, img_name, inner_text, darkmode, text_below) hier wird jede figure überarbeitet und mit den nötigen Einstellungen versehen. Im nächsten Abschnitt werden teile des Codes gezeigt:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">update_donut_fig</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">img_name</span><span class="p">,</span> <span class="n">txt</span><span class="p">,</span> <span class="n">darkmode</span><span class="p">,</span> <span class="n">expl_txt</span><span class="o">=</span><span class="s2">&quot;&quot;</span> <span class="p">):</span>
+    
+
+    <span class="c1"># hinzufügen des Bildes</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">add_layout_image</span><span class="p">(</span>
+        <span class="nb">dict</span><span class="p">(</span>
+            <span class="n">source</span><span class="o">=</span><span class="n">img</span><span class="p">,</span>
+            <span class="n">xref</span><span class="o">=</span><span class="s2">&quot;paper&quot;</span><span class="p">,</span> <span class="n">yref</span><span class="o">=</span><span class="s2">&quot;paper&quot;</span><span class="p">,</span>
+            <span class="n">x</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span>
+            <span class="n">sizex</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">sizey</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span>
+            <span class="n">xanchor</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">yanchor</span><span class="o">=</span><span class="s2">&quot;middle&quot;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="c1"># hinzufügen des inneren Textes</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span>
+        <span class="n">text</span><span class="o">=</span><span class="n">txt</span><span class="p">,</span> 
+        <span class="n">xref</span><span class="o">=</span><span class="s2">&quot;paper&quot;</span><span class="p">,</span> 
+        <span class="n">yref</span><span class="o">=</span><span class="s2">&quot;paper&quot;</span><span class="p">,</span>
+        <span class="n">x</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.45</span><span class="p">,</span>
+        <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">font_size</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span>
+        <span class="n">font_color</span><span class="o">=</span><span class="n">color</span>
+    <span class="p">)</span>
+    
+    <span class="c1"># hinzufügen des Textes unterhalbes des Diagramms</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span>
+        <span class="n">text</span><span class="o">=</span><span class="n">expl_txt</span><span class="p">,</span> 
+        <span class="n">xref</span><span class="o">=</span><span class="s2">&quot;paper&quot;</span><span class="p">,</span> 
+        <span class="n">yref</span><span class="o">=</span><span class="s2">&quot;paper&quot;</span><span class="p">,</span>
+        <span class="n">x</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
+        <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">font_size</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span>
+        <span class="n">font_color</span><span class="o">=</span><span class="n">color</span>
+    <span class="p">)</span>
+
+    <span class="n">fig</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">textinfo</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">,</span> <span class="n">sort</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">layout</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">plot_bgcolor</span><span class="o">=</span> <span class="s1">&#39;rgba(0, 0, 0, 0)&#39;</span><span class="p">,</span>
+        <span class="n">paper_bgcolor</span><span class="o">=</span> <span class="s1">&#39;rgba(0, 0, 0, 0)&#39;</span><span class="p">,)</span>
+    <span class="k">return</span> <span class="n">fig</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="phishing-zielgruppen">
+<h4>Phishing Zielgruppen<a class="headerlink" href="#phishing-zielgruppen" title="Permalink to this headline">¶</a></h4>
+<p>Hier wollten wir noch einmal darstellen, wer besonders anfällig ist für Phishing Mails. Dafür haben wir ein Balkendiagramm erstellt. Dem Nutzer wird hier die Möglichkeit geboten zu wählen, ob er die Fehlequoten der Abteilungen oder Branchen filtern möchte. Ebenfalls kann er seine Branche/ Abteilung hervorheben.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Der genaue Code für die Diagrammerstellung wird nicht dargestellt, da das Prinzip bereits im Abschnitt Summierte Schäden erläutert wurde.</p>
+</div>
+</div>
+</div>
+<div class="section" id="password-py-passwortsicherheit">
+<h3><a class="reference external" href="http://password.py">password.py</a> / Passwortsicherheit<a class="headerlink" href="#password-py-passwortsicherheit" title="Permalink to this headline">¶</a></h3>
+<p>Zum einen sollen die Nutzer angeregt werden vielleicht eigene Passwörter in der Passwortwolke zu finden. Die wird mit der python Bibliothek wordcloud erzeugt.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="c1"># Bearbeiten des Dataframes</span>
+
+<span class="c1"># Erzeugen des JSONs mit Textelemente und größe in der Wordcloud </span>
+<span class="n">text</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+    <span class="n">text</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s2">&quot;Password&quot;</span><span class="p">])]</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s2">&quot;size&quot;</span><span class="p">]</span>
+
+<span class="c1"># Erstellen der Form für die Wordcloud -&gt; Hier wird die Form eines Kreises erstellt</span>
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ogrid</span><span class="p">[:</span><span class="mi">500</span><span class="p">,</span> <span class="p">:</span><span class="mi">500</span><span class="p">]</span>
+<span class="n">mask</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">250</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">y</span> <span class="o">-</span> <span class="mi">250</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">&gt;</span> <span class="mi">250</span> <span class="o">**</span> <span class="mi">2</span> 
+<span class="n">mask</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">*</span> <span class="n">mask</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+
+<span class="c1"># Farben werden je nach darkmode erzeugt</span>
+<span class="k">if</span> <span class="n">darkmode</span><span class="p">:</span>
+    <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;rgb(7, 37, 66)&quot;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;rgb(255, 255, 255)&quot;</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">word_cloud</span> <span class="o">=</span> <span class="n">WordCloud</span><span class="p">(</span><span class="n">collocations</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">background_color</span><span class="o">=</span><span class="n">color</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">1920</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">1080</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="n">mask</span><span class="p">)</span><span class="o">.</span><span class="n">generate_from_frequencies</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">darkmode</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">white_color_func</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">font_size</span><span class="p">,</span> <span class="n">position</span><span class="p">,</span><span class="n">orientation</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;hsl(0, 100%, 100%)&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">word_cloud</span><span class="o">.</span><span class="n">recolor</span><span class="p">(</span><span class="n">color_func</span> <span class="o">=</span> <span class="n">white_color_func</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span> 
+    <span class="k">def</span> <span class="nf">blue_color_func</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">font_size</span><span class="p">,</span> <span class="n">position</span><span class="p">,</span><span class="n">orientation</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;hsl(209, 81%, 14%)&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">word_cloud</span><span class="o">.</span><span class="n">recolor</span><span class="p">(</span><span class="n">color_func</span> <span class="o">=</span> <span class="n">blue_color_func</span><span class="p">)</span>
+
+<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">word_cloud</span><span class="o">.</span><span class="n">to_image</span><span class="p">()</span> <span class="c1"># Wordcloud wird als Bild zurückgegeben</span>
+</pre></div>
+</div>
+<p>Neben der Wordcloud können Nutzer ebenfalls ihr Passwort auf die Stärke testen lassen. Die Stärke des Passworts wird so berechnet, dass alle Möglichkeiten an Zeichen genommen werden und mit der Länge des Passworts potentiert werden. Es wird davon ausgegangen, dass ein Computer 1.000.000.000 Variationen austesten kann.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Formel für die Berechnung
+
+Möglichkeiten ** Passwortlänge / VersucheProSekunde
+
+Möglichkeiten = (Zahlen ? + 10) + (Kleinbuchstaben ? + 26) + (Großbuchstaben ? + 26) + (Sonderzeichen ? + 32)
+VersucheProSekunde = 1.000.000.000
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="start.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Ideengenerierung und Dasboardaufbau</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="report.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Reports</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Tim Kossmann (38099) & Laura Heß (38603)<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

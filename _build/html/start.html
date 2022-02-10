@@ -51,7 +51,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Content with notebooks" href="notebooks.html" />
+    <link rel="next" title="Dashboard" href="dashboard.html" />
     <link rel="prev" title="Markdown Files" href="markdown.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -102,6 +102,16 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Ideengenerierung und Dasboardaufbau
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dashboard.html">
+   Dashboard
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="report.html">
+   Reports
   </a>
  </li>
  <li class="toctree-l1">
@@ -202,8 +212,8 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#themenfindung">
-     Themenfindung
+    <a class="reference internal nav-link" href="#themenfindung-the-big-idea">
+     Themenfindung/ The Big Idea
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -212,13 +222,40 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#aufbau-des-dashboards">
-     Aufbau des Dashboards
+    <a class="reference internal nav-link" href="#aufbau-des-dashboards-storyboard">
+     Aufbau des Dashboards/ Storyboard
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#tab-1-datenlecks">
+       Tab 1 Datenlecks
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#tab-2-cyber-attacken">
+       Tab 2 Cyber Attacken
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#tab-3-phising">
+       Tab 3 Phising
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#tab-4-passwortsicherheit">
+       Tab 4 Passwortsicherheit
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#design-des-dashboards">
      Design des Dashboards
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#arbeitsweise">
+     Arbeitsweise
     </a>
    </li>
   </ul>
@@ -242,8 +279,8 @@
 <p class="admonition-title">Note</p>
 <p>Dieses Kapitel beschreibt, wie wir das Thema gefunden haben. Des Weiteren wird erläutert, wie das Dashboard aufgebaut wurde.</p>
 </div>
-<div class="section" id="themenfindung">
-<h3>Themenfindung<a class="headerlink" href="#themenfindung" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="themenfindung-the-big-idea">
+<h3>Themenfindung/ The Big Idea<a class="headerlink" href="#themenfindung-the-big-idea" title="Permalink to this headline">¶</a></h3>
 <p>Die digitale Transformation bietet den meisten Unternehmen viele neue und bedeutende Chancen. Schnell wird jedoch klar, dass diese Transformation auch Risiken herbeiführen kann. Dabei ist fast jeder, also Unternehmen, öffentliche Institutionen, andere Organisationen sowie Privatpersonen das Ziel von Cyber-Attacken. Die Bedrohungslage nimmt stetig zu. Ziel sind die sensiblen und wertvollen Daten.</p>
 <p>Organisiert werden Schwachstellen, wie veraltete Systeme, zu geringe Sicherheitsbarrieren oder menschliches Fehlverhalten. Cyber-Attacken führen häufig zu finanziellen Schäden.</p>
 <p>Cyber Security wird in vielen deutschen Unternehmen vernachlässigt. Oft können die Unternehmen die Risiken der Cyberkriminalität nicht abschätzen. Die Angst vor Cyberkriminalität ist meist nicht groß genug.
@@ -252,6 +289,7 @@ Cyberkriminalität lässt sich geradezu als Wachstumsbranche bezeichnen. Neben d
 Besonders kleine und mittelständische Unternehmen stehen im Visier von Cyberkriminiellen. Denn diese haben meist unterdurchschnittliche Sicherheitsvorkehrungen.</p>
 <p>Wir haben das Thema “Cyber Security” gewählt, da wir die Brisanz dieses Themas erkannt haben und daher besonders Startups, sowie Klein- und Mittelständische Unternehmen  darauf aufmerksam machen wollen, dass es längst an der Zeit war tatkräftig zu werden und sich mit qualifizierten und stetig anpassenden Schutzmaßnahmen gegen Cyber-Attacken zu schützen.</p>
 <p>Um unsere Story besser aufbauen und darstellen zu können, werden wir mit Hilfe des fiktiven Unternehmens LaCTiS die Zuhörer (Klein- und Mittelständische Unternehmen, Startups) auf unser Thema aufmerksam zu machen und sie dazu bringen Unternehmungen anzustreben. Diese Unternehmnungen beziehen sich im besten Fall auf den Kauf der LaCTiS-Produkte oder dem Buchen von LaCTiS-Dienstleistungen.</p>
+<p>![Big Idea Worksheet](Lactis_the big idea worksheet.pdf)</p>
 </div>
 <div class="section" id="vorgehen-nach-der-themenfindung">
 <h3>Vorgehen nach der Themenfindung<a class="headerlink" href="#vorgehen-nach-der-themenfindung" title="Permalink to this headline">¶</a></h3>
@@ -259,25 +297,63 @@ Besonders kleine und mittelständische Unternehmen stehen im Visier von Cyberkri
 Anschließen haben wir uns die relevanten und interessantesten Daten herausgesucht, um sie in unserer Dashboard zu integrieren.</p>
 <p>Im nächsten Schritt wurde mit der explanatorischen Kommunikation gestartet. Dies ist unter Anderem die Umsetzung unseres Dashboards. Wir wollen damit die von uns rausgesuchten Daten aus der explorativen Analyse kommunizieren, die Zuhörenden für das Thema sensibilisieren und sie anschließend dazu anregen aktiv zu werden.</p>
 </div>
-<div class="section" id="aufbau-des-dashboards">
-<h3>Aufbau des Dashboards<a class="headerlink" href="#aufbau-des-dashboards" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="aufbau-des-dashboards-storyboard">
+<h3>Aufbau des Dashboards/ Storyboard<a class="headerlink" href="#aufbau-des-dashboards-storyboard" title="Permalink to this headline">¶</a></h3>
 <p>Um die Story verständlich für den Zuhörer aufbauen zu können haben wir die Visualisierungen zu Themengebieten zugeordnet. Jedes Themengebiet hat einen eigenen Tab bekommen (siehe Abbildung 1). So kann sich der Zuhörer bei der Präsentation auf die Visualisierung konzentrieren über die gerade gesprochen wird und keinen Informations-Overload bekommt. Beim Aufbau des Dashboards bzw. der einzelnen Tabs haben wir uns von Tableau (siehe <a class="reference external" href="https://help.tableau.com/current/pro/desktop/de-de/stories.htm">https://help.tableau.com/current/pro/desktop/de-de/stories.htm</a>) inspirieren lassen.</p>
 <p>Im Folgenden werden die ersten Skizzen unseres Dashboards gezeigt. An diesen haben wir uns dann bei der Erstellung des Dashboards orientiert. Das hat uns sehr geholfen, um uns vorstellen zu können, wie es aussehen soll und dann nach dieser Vorlage programmieren zu können.</p>
 <p><img alt="Scetch Header" src="_images/Scetch_Header.png" />
 Abbildung 1 Header des Dashboards</p>
-<p><img alt="Scetch Data Breaches" src="_images/Scetch_DataBreaches.png" />
-Abbildung 2 Tab 1 Data Breaches</p>
+<p>Unser Header sollte aus dem Titel des Dashboards und dem Logo von LaCTiS bestehen, Außerdem haben wir in den Header noch die Tabs eingefügt, die bereits oben erwähnt wurden. Bei den Tabs haben wir uns folgenden Aufbau überlegt:</p>
+<ul class="simple">
+<li><p>Dem Zuhörer soll zunächst ein grober Überblick über die Datenlecks in den letzten Jahren gegeben werden. (Siehe Abb. 2)</p></li>
+<li><p>Angriffsvektoren bei Cyber Angriffen. Also wie werden Unternehmen angegriffen und in welchem Verhältnis stehen diese Angriffsvektoren. (Siehe Abb. 3)</p></li>
+<li><p>Im nächsten Schritt soll auf den Angriffsvektor ‘Phishing’ genauer eingegangen werden. (Siehe Abb. 4)</p></li>
+<li><p>Als letztes soll der Zuhörer noch über die Sicherheit von Passwörtern etwas erfahren. (Siehe Abb. 5)</p></li>
+</ul>
+<div class="section" id="tab-1-datenlecks">
+<h4>Tab 1 Datenlecks<a class="headerlink" href="#tab-1-datenlecks" title="Permalink to this headline">¶</a></h4>
+<p><img alt="Scetch Datenlecks" src="_images/Scetch_DataBreaches.png" />
+Abbildung 2 Tab 1 Datenlecks
+Im ersten Tab soll mit den finanziellen Schäden, die durch Datenlecks entstanden sind, zum Thema Cyber Security hingeführt werden. Der Zuhörer soll hier erkennen, dass die finanziellen Schäden über die Jahre größer geworden sind. Die Aufmerksamkeit soll hier eventuell auch ein bisschen durch die “Angst” selbst gehackt zu werden und finanzielle Schäden zu erleiden, geweckt werden.</p>
+</div>
+<div class="section" id="tab-2-cyber-attacken">
+<h4>Tab 2 Cyber Attacken<a class="headerlink" href="#tab-2-cyber-attacken" title="Permalink to this headline">¶</a></h4>
 <p><img alt="Scetch Cyber Attacken" src="_images/Scetch_CyberAttacken.png" />
-Abbildung 3 Tab 2 Cyber Attacken</p>
-<p><img alt="Scetch Phising" src="_images/Scetch_Phising.png" />
-Abbildung 4 Tab 3 Phising</p>
+Abbildung 3 Tab 2 Cyber Attacken
+Der zweite Tab soll dazu dienen dem Zuhörer zu übermitteln, dass es neben den Systemen die angegriffen werden, auch die Menschen sind, die dazu führen, dass Cyber Angriffe entstehen können. Außerdem soll insgesamt ein Überblick gezeigt werden, welche unterschiedlichen Angriffsvektoren es in den Kategorien Mensch und System gibt. Zu den verschiedenen Angriffsvektoren soll eine Erklärung ausgegeben werden.</p>
+</div>
+<div class="section" id="tab-3-phising">
+<h4>Tab 3 Phising<a class="headerlink" href="#tab-3-phising" title="Permalink to this headline">¶</a></h4>
+<p><img alt="Scetch Phishing" src="_images/Scetch_Phishing.png" />
+Abbildung 4 Tab 3 Phishing
+Phishing-Mails hat vermutlich jeder schon einmal bekommen und kann sich damit identifizieren. Phishing ist einer der Hackermehtoden die jeder kennt. Daher wollten wir zu dieser Art von Angriffsvektor noch detaillierte Informationen geben.</p>
+</div>
+<div class="section" id="tab-4-passwortsicherheit">
+<h4>Tab 4 Passwortsicherheit<a class="headerlink" href="#tab-4-passwortsicherheit" title="Permalink to this headline">¶</a></h4>
 <p><img alt="Scetch Passwords" src="_images/Scetch_Passwords.png" />
-Abbildung 5 Tab 4 Passwort-Cloud und Passwortrechner</p>
+Abbildung 5 Tab 4 Passwort-Cloud und Passwortrechner
+Passwörter sind ein elementarer Bestandteil um sich vor Cyber Attacken zu schützen. Wenn man sich im Gegensatz dazu die meist genutzten Passwörter anschaut, verstehen die meisten Menschen vermutlich nicht Relevanz von diesen. Mit dem Passwörter-Calculator soll dem Zuhörer demonstriert werden, wie schnell einfache Passwörter gekackt werden können.</p>
+</div>
 </div>
 <div class="section" id="design-des-dashboards">
 <h3>Design des Dashboards<a class="headerlink" href="#design-des-dashboards" title="Permalink to this headline">¶</a></h3>
-<p>Das Dashboard sollte im besten Fall zur der Corporate Identity (CI) passen. Da es sich bei LaCTiS um ein von uns ausgedachtes Unternehmen handelt haben wir uns ein Logo und eine Farbpalette ausgedacht, die unserer Meinung nach zum Thema Cyber Security passt. Die Farbpalette haben wir mit Hilfe eines Bildes mit der Color palette generator von Canva erstellt (siehe <a class="reference external" href="https://www.canva.com/colors/color-palette-generator/">https://www.canva.com/colors/color-palette-generator/</a>).</p>
+<p>Das Dashboard sollte im besten Fall zur der Corporate Identity (CI) passen. Da es sich bei LaCTiS um ein von uns ausgedachtes Unternehmen handelt haben wir uns ein Logo und eine Farbpalette ausgedacht, die unserer Meinung nach zum Thema Cyber Security passt. Die Farbpalette haben wir mit Hilfe eines Bildes mit der Color palette generator von Canva erstellt (siehe <a class="reference external" href="https://www.canva.com/colors/color-palette-generator/">https://www.canva.com/colors/color-palette-generator/</a>). Dort konnten wir dann den Hexadezimalcodes für unsere Farbpalette übernehmen.</p>
+<p><img alt="Farbpalette" src="_images/LaCTis-Farbpalette.png" />
+Abbildung 6 Tab 4 Farbpalette inklusive Hexadezimalcodes</p>
 <p>Beim Logo wurde ein Schutzschild als Grundlage gewählt, da dieses Symbol häufig in Verbindung mit Cyber Security gebracht wird. Es soll den Schutz vor möglichen Angriffen darstellen. Im inneren des Schutzschilds ist ein Kreis in dem alle Buchstaben des Unternehmensnahems zu finden sind.</p>
+<p><img alt="Logo LaCTiS" src="_images/LaCTis_Logo.png" />
+Abbildung 7 Logo LaCTiS</p>
+</div>
+<div class="section" id="arbeitsweise">
+<h3>Arbeitsweise<a class="headerlink" href="#arbeitsweise" title="Permalink to this headline">¶</a></h3>
+<p>Zur Versionsverwaltung unserer Software-Entwicklung haben wir den netzbasierten Dienst GitHub verwendet. Da wir zu Zweit an dem Projekt gearbeitet haben konnten wir unsere Ergebnisse immer zusammenfügen. Dabei haben wir vor allem bei der Erstellung des Dashboards und der Reports mit zwei Branches gearbeitet. So konnten wir gleichzeitig an dem Projekt, jeder in seinem eigenen Branch, arbeiten. In regelmäßigen und für uns sinnvoll erscheinen Abständen haben wir unsere Ergbnisse durch git-merge zusammengefügt.
+Als Quelltext-Editor haben wir uns für den kostenlosen Editor Visual Studio Code von Mircosoft entschieden, da wir diesen bereits von vorherigen Projekten kannten. Unsere Ergebnisse wurden alle in Pyhton-Dateien geschrieben, da wir hier einfacher mit Klassen und Methoden arbeiten konnten. Zur Bearbeitung von den DataFrames und zur Entwicklung von den Diagrammen mit Plotly Express, Plotly Go, etc. haben zunächst IPYNB-Dateien erstellt. Hier konnten wir die DataFrames gut bearbeiten und die Diagramme entwickeln, da man immer eine direkte Rückmeldung bzw. ein Ergebnis bekommt. Das erleichert die Entwicklung. Für die weitere Entwicklung des Dashboards wurden die IPYNB-Dateien dann in Python-Datein überführt.
+Insgesamt haben wir unsere Ideen gemeinsam erarbeitet bzw. gebrainstormt. Den Code haben wir dann meist in Einzelarbeit, aber auch in PairProgramming geschrieben. Außerdem haben wir an den Wochenenden und der vorlesungsfreien Zeit einige Hackathons durchgeführt. Insgesamt haben wir sehr gut zusammen gearbeitet und uns gegenseitig immer bei Fragen oder Problemen geholfen.
+Als Kollaraborations-Plattform haben wir Teams verwendet. Dort haben wir Dokumente und Dateien für die explorative Phase geteilt, uns in virtuellen Räumen getroffen und in einem Kanban-Board unsere Fortschritte, sowie Aufgaben dokumentiert.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>SpiceTech :D das schreibt Tim :P .</p>
+</div>
 </div>
 </div>
 </div>
@@ -321,10 +397,10 @@ Abbildung 5 Tab 4 Passwort-Cloud und Passwortrechner</p>
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="notebooks.html" title="next page">
+        <a class="right-next" href="dashboard.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Content with notebooks</p>
+                <p class="prevnext-title">Dashboard</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>
