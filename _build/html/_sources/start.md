@@ -19,7 +19,7 @@ Wir haben das Thema "Cyber Security" gewählt, da wir die Brisanz dieses Themas 
 
 Um unsere Story besser aufbauen und darstellen zu können, werden wir mithilfe des fiktiven Unternehmens LaCTiS die Zuhörer (klein- und mittelständische Unternehmen, Startups) auf unser Thema aufmerksam zu machen und sie dazu bringen, Unternehmungen anzustreben. Diese Unternehmungen beziehen sich im besten Fall auf den Kauf der LaCTiS-Produkte oder dem Buchen von LaCTiS-Dienstleistungen.
 
-![Big Idea Worksheet](LaCTiS_the_big_idea_worksheet.pdf)
+![Big Idea Worksheet](LaCTiS_the_big_idea_worksheet.png)
 
 ### Vorgehen nach der Themenfindung 
 Zunächst wurde mit der explorativen Analyse gestartet. Wir haben uns nach Daten umgeschaut und haben versucht, diese nachzuvollziehen. Dabei haben wir auf verschiedene Ressourcen zurückgegriffen, wie z. B. Statista, information is beautiful oder auch Reports von Unternehmen und dem Bundesamt für Sicherheit der Informationstechnik.
@@ -82,5 +82,8 @@ Als Kollaraborationsplattform haben wir Teams verwendet. Dort haben wir Dokument
 
 
 :::{note}
-SpiceTech :D das schreibt Tim :P .
+SpiceTech
+Zu Beginn des Kurses war unser Plan, mit dem Unternehmen Spicetech zusammen zu arbeiten. Das Unternehmen entwickelt zurzeit eine KI namens Valicy, die andere KIs auf mögliche Fehler testen kann. Die Aufgabe wäre hier gewesen, sich zu überlegen, wie die Daten sinnvoll visualisiert werden können, da die KI in n Dimensionen testet. 
+
+Dazu hatten wir auch mehrere Meetings mit dem Unternehmen, um die Daten und die Aufgabenstellung besser zu verstehen. Leider mussten wir dann feststellen, dass die Entwicklung für unser Projekt noch nicht weit genug vorangeschritten war. Hier konnten wir uns dann nicht sicher sein, ob die Daten für das Projekt geeignet sind. Nach ein paar Wochen und einigen Arbeitsstunden entschieden wir uns, die Zusammenarbeit zu beenden und uns ein eigenes Thema zu suchen. Da wir uns beide für Cyber Security interessieren war das dann auch unsere Wahl bei der Themensuche für den Kurs.
 :::
