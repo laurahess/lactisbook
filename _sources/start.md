@@ -82,7 +82,7 @@ Als Kollaraborationsplattform haben wir Teams verwendet. Dort haben wir Dokument
 
 
 :::{note}
-**SpiceTech**
+SpiceTech
 Zu Beginn des Kurses war unser Plan, mit dem Unternehmen Spicetech zusammen zu arbeiten. Das Unternehmen entwickelt zurzeit eine KI namens Valicy, die andere KIs auf mögliche Fehler testen kann. Die Aufgabe wäre hier gewesen, sich zu überlegen, wie die Daten sinnvoll visualisiert werden können, da die KI in n Dimensionen testet. 
 
 Dazu hatten wir auch mehrere Meetings mit dem Unternehmen, um die Daten und die Aufgabenstellung besser zu verstehen. Leider mussten wir dann feststellen, dass die Entwicklung für unser Projekt noch nicht weit genug vorangeschritten war. Hier konnten wir uns dann nicht sicher sein, ob die Daten für das Projekt geeignet sind. Nach ein paar Wochen und einigen Arbeitsstunden entschieden wir uns, die Zusammenarbeit zu beenden und uns ein eigenes Thema zu suchen. Da wir uns beide für Cyber Security interessieren war das dann auch unsere Wahl bei der Themensuche für den Kurs.
