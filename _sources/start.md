@@ -19,7 +19,7 @@ Wir haben das Thema "Cyber Security" gewählt, da wir die Brisanz dieses Themas 
 
 Um unsere Story besser aufbauen und darstellen zu können, werden wir mithilfe des fiktiven Unternehmens LaCTiS die Zuhörer (klein- und mittelständische Unternehmen, Startups) auf unser Thema aufmerksam zu machen und sie dazu bringen, Unternehmungen anzustreben. Diese Unternehmungen beziehen sich im besten Fall auf den Kauf der LaCTiS-Produkte oder dem Buchen von LaCTiS-Dienstleistungen.
 
-![Big Idea Worksheet](LaCTiS_the_big_idea_worksheet.pdf)
+![Big Idea Worksheet](LaCTiS_the_big_idea_worksheet.png)
 
 ### Vorgehen nach der Themenfindung 
 Zunächst wurde mit der explorativen Analyse gestartet. Wir haben uns nach Daten umgeschaut und haben versucht, diese nachzuvollziehen. Dabei haben wir auf verschiedene Ressourcen zurückgegriffen, wie z. B. Statista, information is beautiful oder auch Reports von Unternehmen und dem Bundesamt für Sicherheit der Informationstechnik.
